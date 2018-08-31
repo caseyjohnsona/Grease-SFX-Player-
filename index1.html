@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<meta charset="UTF-8"> 
+<html>
+
+<head>
+	<title>Sound Player</title>
+	<link id="pagestyle" rel="stylesheet" href="styles.css">
+	<script type="text/javascript" src="scripts/create_table.js"></script>
+	<script type="text/javascript" src="scripts/fade.js"></script>
+	<script type="text/javascript" src="sounds.js"></script>
+	<script type="text/javascript" src="scripts/improvement.js"></script>
+	<script type="text/javascript" src="scripts/swapStyle.js"></script>
+	<script type="text/javascript" src="scripts/setTimer.js"></script>
+	<script type="text/javascript" src="changeVol.js"></script>
+	<style>
+		body{
+			background-color: gray;
+		}
+	</style>
+</head>
+
+<body onload="create_table(); setClick()">
+	<h1 class="rainbow">Addams Family SFX</h1>
+	<img id="whapham" src="images/whapham_head.png" style="display: none;" onclick="swapStyleSheet()">
+	<!-- this table gets all of its stuffing from create_table.js  -->
+	<iframe id="soundText" style="width:0;height:0;border:0; border:none;"></iframe>
+</body>
+</html>
